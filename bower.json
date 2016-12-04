@@ -1,0 +1,26 @@
+{
+  "name": "kount",
+  "version": "0.0.0",
+  "description": "Count object's keys.",
+  "main": "kount.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "count",
+    "object",
+    "enumerable",
+    "property",
+    "key",
+    "kount"
+  ],
+  "homepage": "https://github.com/volkovasystems/kount",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
