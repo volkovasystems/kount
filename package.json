@@ -1,10 +1,13 @@
 {
   "name": "kount",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Count object's keys.",
   "main": "kount.js",
+  "support": "kount.support.js",
+  "deploy": "kount.deploy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel kount.js -o kount.support.js && webpack",
+    "test": "mocha kount-test.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +22,22 @@
     "kount"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/kount/issues"
   },
-  "homepage": "https://github.com/volkovasystems/kount#readme"
+  "homepage": "https://github.com/volkovasystems/kount#readme",
+  "dependencies": {
+    "babel-runtime": "^6.20.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "^1.14.0"
+  }
 }

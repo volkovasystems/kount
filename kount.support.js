@@ -51,23 +51,30 @@
 	@end-module-documentation
 */
 
-const kount = function kount( entity ){
+var _getOwnPropertyDescriptor = require("babel-runtime/core-js/object/get-own-property-descriptor");
+
+var _getOwnPropertyDescriptor2 = _interopRequireDefault(_getOwnPropertyDescriptor);
+
+var _getOwnPropertyNames = require("babel-runtime/core-js/object/get-own-property-names");
+
+var _getOwnPropertyNames2 = _interopRequireDefault(_getOwnPropertyNames);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var kount = function kount(entity) {
 	/*;
-		@meta-configuration:
-			{
-				"entity:required": "object"
-			}
-		@end-meta-configuration
-	*/
+ 	@meta-configuration:
+ 		{
+ 			"entity:required": "object"
+ 		}
+ 	@end-meta-configuration
+ */
 
-	try{
-		return Object.getOwnPropertyNames( entity )
-			.filter( ( property ) => {
-				return Object.getOwnPropertyDescriptor( entity, property ).enumerable;
-			} )
-			.length;
-
-	}catch( error ){
+	try {
+		return (0, _getOwnPropertyNames2.default)(entity).filter(function (property) {
+			return (0, _getOwnPropertyDescriptor2.default)(entity, property).enumerable;
+		}).length;
+	} catch (error) {
 		return 0;
 	}
 };
