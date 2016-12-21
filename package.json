@@ -1,6 +1,6 @@
 {
   "name": "kount",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Count object's keys.",
   "main": "kount.js",
   "support": "kount.support.js",
