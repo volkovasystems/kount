@@ -1,10 +1,8 @@
 {
   "name": "kount",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Count object's keys.",
-  "main": "kount.js",
-  "support": "kount.support.js",
-  "deploy": "kount.deploy.js",
+  "main": "kount.deploy.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
