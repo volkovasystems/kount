@@ -49,7 +49,7 @@
               
               		This will only count object's owned enumberable properties.
               	@end-module-documentation
-              */var _getOwnPropertyDescriptor = require("babel-runtime/core-js/object/get-own-property-descriptor");var _getOwnPropertyDescriptor2 = _interopRequireDefault(_getOwnPropertyDescriptor);var _getOwnPropertyNames = require("babel-runtime/core-js/object/get-own-property-names");var _getOwnPropertyNames2 = _interopRequireDefault(_getOwnPropertyNames);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+              */var _keys = require("babel-runtime/core-js/object/keys");var _keys2 = _interopRequireDefault(_keys);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var kount = function kount(entity) {
 	/*;
@@ -61,11 +61,7 @@ var kount = function kount(entity) {
                                     */
 
 	try {
-		return (0, _getOwnPropertyNames2.default)(entity).
-		filter(function (property) {
-			return (0, _getOwnPropertyDescriptor2.default)(entity, property).enumerable;
-		}).
-		length;
+		return (0, _keys2.default)(entity).length;
 
 	} catch (error) {
 		return 0;

@@ -1,13 +1,13 @@
 {
   "name": "kount",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Count object's keys.",
   "main": "kount.js",
   "support": "kount.support.js",
   "deploy": "kount.deploy.js",
   "browser": "kount.deploy.js",
   "scripts": {
-    "build": "babel kount.js --out-file kount.support.js --source-maps && webpack --progress",
+    "build": "babel kount.js --out-file kount.support.js --source-maps && webpack --progress --display-modules",
     "test": "mocha kount-test.js"
   },
   "repository": {

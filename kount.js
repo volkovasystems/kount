@@ -61,11 +61,7 @@ const kount = function kount( entity ){
 	*/
 
 	try{
-		return Object.getOwnPropertyNames( entity )
-			.filter( ( property ) => {
-				return Object.getOwnPropertyDescriptor( entity, property ).enumerable;
-			} )
-			.length;
+		return Object.keys( entity ).length;
 
 	}catch( error ){
 		return 0;
