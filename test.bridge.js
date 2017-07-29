@@ -1,0 +1,12 @@
+"use strict";var assert = require("assert");
+var kount = require("./kount.js");
+
+assert.equal(kount({ "name": "simple" }), 1, "should have value 1");
+
+assert.equal(kount({}), 0, "should have value 0");
+
+assert.equal(kount(), 0, "should have value 0");
+
+console.log("ok");
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QuYnJpZGdlLmpzIl0sIm5hbWVzIjpbImFzc2VydCIsInJlcXVpcmUiLCJrb3VudCIsImVxdWFsIiwiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6ImFBQUEsSUFBTUEsU0FBU0MsUUFBUyxRQUFULENBQWY7QUFDQSxJQUFNQyxRQUFRRCxRQUFTLFlBQVQsQ0FBZDs7QUFFQUQsT0FBT0csS0FBUCxDQUFjRCxNQUFPLEVBQUUsUUFBUSxRQUFWLEVBQVAsQ0FBZCxFQUE2QyxDQUE3QyxFQUFnRCxxQkFBaEQ7O0FBRUFGLE9BQU9HLEtBQVAsQ0FBY0QsTUFBTyxFQUFQLENBQWQsRUFBNEIsQ0FBNUIsRUFBK0IscUJBQS9COztBQUVBRixPQUFPRyxLQUFQLENBQWNELE9BQWQsRUFBd0IsQ0FBeEIsRUFBMkIscUJBQTNCOztBQUVBRSxRQUFRQyxHQUFSLENBQWEsSUFBYiIsImZpbGUiOiJ0ZXN0LmJyaWRnZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IGFzc2VydCA9IHJlcXVpcmUoIFwiYXNzZXJ0XCIgKTtcclxuY29uc3Qga291bnQgPSByZXF1aXJlKCBcIi4va291bnQuanNcIiApO1xyXG5cclxuYXNzZXJ0LmVxdWFsKCBrb3VudCggeyBcIm5hbWVcIjogXCJzaW1wbGVcIiB9ICksIDEsIFwic2hvdWxkIGhhdmUgdmFsdWUgMVwiICk7XHJcblxyXG5hc3NlcnQuZXF1YWwoIGtvdW50KCB7IH0gKSwgMCwgXCJzaG91bGQgaGF2ZSB2YWx1ZSAwXCIgKTtcclxuXHJcbmFzc2VydC5lcXVhbCgga291bnQoICksIDAsIFwic2hvdWxkIGhhdmUgdmFsdWUgMFwiICk7XHJcblxyXG5jb25zb2xlLmxvZyggXCJva1wiICk7XHJcbiJdfQ==
+//# sourceMappingURL=test.bridge.js.map
