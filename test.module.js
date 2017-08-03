@@ -71,9 +71,9 @@ const path = require( "path" );
 
 //: @server:
 describe( "kount", ( ) => {
-	
+
 	describe( '"kount( { "name": "simple" } )"', ( ) => {
-		it( "should have value 1", ( ) => {
+		it( "should be equal to 1", ( ) => {
 
 			assert.equal( kount( { "name": "simple" } ), 1 );
 
@@ -81,7 +81,7 @@ describe( "kount", ( ) => {
 	} );
 
 	describe( "`kount( { } )`", ( ) => {
-	it( "should have value 0", ( ) => {
+	it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( { } ), 0 );
 
@@ -89,7 +89,7 @@ describe( "kount", ( ) => {
 	} );
 
 	describe( "kount( )", ( ) => {
-	it( "should have value 0", ( ) => {
+	it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( ), 0 );
 
@@ -101,12 +101,12 @@ describe( "kount", ( ) => {
 //: @end-server
 
 
-//: @client: 
+//: @client:
 
 describe( "kount", ( ) => {
-	
+
 	describe( '"kount( { "name": "simple" } )"', ( ) => {
-		it( "should have value 1", ( ) => {
+		it( "should be equal to 1", ( ) => {
 
 			assert.equal( kount( { "name": "simple" } ), 1 );
 
@@ -114,7 +114,7 @@ describe( "kount", ( ) => {
 	} );
 
 	describe( "`kount( { } )`", ( ) => {
-	it( "should have value 0", ( ) => {
+	it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( { } ), 0 );
 
@@ -122,7 +122,7 @@ describe( "kount", ( ) => {
 	} );
 
 	describe( "kount( )", ( ) => {
-	it( "should have value 0", ( ) => {
+	it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( ), 0 );
 
@@ -136,6 +136,60 @@ describe( "kount", ( ) => {
 
 //: @bridge:
 
+describe( "kount", ( ) => {
 
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( '"kount( { "name": "simple" } )"', ( ) => {
+		it( "should be equal to 1", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return kount( { "name": "simple" } );
+				}
+
+			).value;
+
+			assert.equal( result, 1 );
+
+		} );
+	} );
+
+
+	describe( "`kount( { } )`", ( ) => {
+		it( "should be equal to 0", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return kount( { } );
+				}
+
+			).value;
+
+			assert.equal( result, 0 );
+
+		} );
+	} );
+
+
+	describe( "kount( )", ( ) => {
+		it( "should be equal to 0", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return kount( );
+				}
+
+			).value;
+
+			assert.equal( result, 0 );
+
+		} );
+	} );
+
+} );
 
 //: @end-bridge
