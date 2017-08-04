@@ -72,7 +72,7 @@ const path = require( "path" );
 //: @server:
 describe( "kount", ( ) => {
 
-	describe( '"kount( { "name": "simple" } )"', ( ) => {
+	describe( "`kount( { 'name': 'simple' } )`", ( ) => {
 		it( "should be equal to 1", ( ) => {
 
 			assert.equal( kount( { "name": "simple" } ), 1 );
@@ -88,7 +88,7 @@ describe( "kount", ( ) => {
 		} );
 	} );
 
-	describe( "kount( )", ( ) => {
+	describe( "`kount( )`", ( ) => {
 	it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( ), 0 );
@@ -105,7 +105,7 @@ describe( "kount", ( ) => {
 
 describe( "kount", ( ) => {
 
-	describe( '"kount( { "name": "simple" } )"', ( ) => {
+	describe( "`kount( { 'name': 'simple' } )`", ( ) => {
 		it( "should be equal to 1", ( ) => {
 
 			assert.equal( kount( { "name": "simple" } ), 1 );
@@ -121,7 +121,7 @@ describe( "kount", ( ) => {
 		} );
 	} );
 
-	describe( "kount( )", ( ) => {
+	describe( "`kount( )`", ( ) => {
 	it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( ), 0 );
@@ -140,7 +140,7 @@ describe( "kount", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
-	describe( '"kount( { "name": "simple" } )"', ( ) => {
+	describe( "`kount( { 'name': 'simple' } )`", ( ) => {
 		it( "should be equal to 1", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
@@ -174,7 +174,7 @@ describe( "kount", ( ) => {
 	} );
 
 
-	describe( "kount( )", ( ) => {
+	describe( "`kount( )`", ( ) => {
 		it( "should be equal to 0", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
