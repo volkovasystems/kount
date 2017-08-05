@@ -5,28 +5,28 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2017-07-30T16:25:27.135Z",
-    "end": "2017-07-30T16:25:27.142Z",
+    "start": "2017-08-05T11:57:31.256Z",
+    "end": "2017-08-05T11:57:31.263Z",
     "duration": 7
   },
   "tests": [
     {
-      "title": "should have value 1",
-      "fullTitle": "kount \"kount( { \"name\": \"simple\" } )\" should have value 1",
+      "title": "should be equal to 1",
+      "fullTitle": "kount `kount( { 'name': 'simple' } )` should be equal to 1",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to 0",
+      "fullTitle": "kount `kount( { } )` should be equal to 0",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
-      "title": "should have value 0",
-      "fullTitle": "kount `kount( { } )` should have value 0",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should have value 0",
-      "fullTitle": "kount kount( ) should have value 0",
+      "title": "should be equal to 0",
+      "fullTitle": "kount `kount( )` should be equal to 0",
       "duration": 1,
       "currentRetry": 0,
       "err": {}
@@ -36,22 +36,22 @@
   "failures": [],
   "passes": [
     {
-      "title": "should have value 1",
-      "fullTitle": "kount \"kount( { \"name\": \"simple\" } )\" should have value 1",
+      "title": "should be equal to 1",
+      "fullTitle": "kount `kount( { 'name': 'simple' } )` should be equal to 1",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to 0",
+      "fullTitle": "kount `kount( { } )` should be equal to 0",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
-      "title": "should have value 0",
-      "fullTitle": "kount `kount( { } )` should have value 0",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should have value 0",
-      "fullTitle": "kount kount( ) should have value 0",
+      "title": "should be equal to 0",
+      "fullTitle": "kount `kount( )` should be equal to 0",
       "duration": 1,
       "currentRetry": 0,
       "err": {}

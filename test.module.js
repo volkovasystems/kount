@@ -55,7 +55,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const kount = require( "./kount.js" );
@@ -79,23 +79,24 @@ describe( "kount", ( ) => {
 
 		} );
 	} );
+	
 
 	describe( "`kount( { } )`", ( ) => {
-	it( "should be equal to 0", ( ) => {
+		it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( { } ), 0 );
 
 		} );
 	} );
 
+
 	describe( "`kount( )`", ( ) => {
-	it( "should be equal to 0", ( ) => {
+		it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( ), 0 );
 
 		} );
 	} );
-
 } );
 
 //: @end-server

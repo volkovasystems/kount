@@ -55,7 +55,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const kount = require( "./kount.js" );
@@ -67,31 +67,32 @@ const kount = require( "./kount.js" );
 
 //: @server:
 describe( "kount", ( ) => {
-	
-	describe( '"kount( { "name": "simple" } )"', ( ) => {
-		it( "should have value 1", ( ) => {
+
+	describe( "`kount( { 'name': 'simple' } )`", ( ) => {
+		it( "should be equal to 1", ( ) => {
 
 			assert.equal( kount( { "name": "simple" } ), 1 );
 
 		} );
 	} );
+	
 
 	describe( "`kount( { } )`", ( ) => {
-	it( "should have value 0", ( ) => {
+		it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( { } ), 0 );
 
 		} );
 	} );
 
-	describe( "kount( )", ( ) => {
-	it( "should have value 0", ( ) => {
+
+	describe( "`kount( )`", ( ) => {
+		it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( ), 0 );
 
 		} );
 	} );
-
 } );
 
 //: @end-server
@@ -101,18 +102,3 @@ describe( "kount", ( ) => {
 
 
 
-
-
-
-
-
-// const assert = require( "assert" );
-// const kount = require( "./kount.js" );
-
-// assert.equal( kount( { "name": "simple" } ), 1, "should have value 1" );
-
-// assert.equal( kount( { } ), 0, "should have value 0" );
-
-// assert.equal( kount( ), 0, "should have value 0" );
-
-// console.log( "ok" );
