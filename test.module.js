@@ -114,16 +114,18 @@ describe( "kount", ( ) => {
 		} );
 	} );
 
+
 	describe( "`kount( { } )`", ( ) => {
-	it( "should be equal to 0", ( ) => {
+		it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( { } ), 0 );
 
 		} );
 	} );
 
+
 	describe( "`kount( )`", ( ) => {
-	it( "should be equal to 0", ( ) => {
+		it( "should be equal to 0", ( ) => {
 
 			assert.equal( kount( ), 0 );
 
