@@ -1,60 +1,60 @@
 {
-  "stats": {
-    "suites": 4,
-    "tests": 3,
-    "passes": 3,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-18T07:10:16.346Z",
-    "end": "2017-08-18T07:10:16.356Z",
-    "duration": 10
-  },
-  "tests": [
-    {
-      "title": "should be equal to 1",
-      "fullTitle": "kount `kount( { 'name': 'simple' } )` should be equal to 1",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 0",
-      "fullTitle": "kount `kount( { } )` should be equal to 0",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 0",
-      "fullTitle": "kount `kount( )` should be equal to 0",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should be equal to 1",
-      "fullTitle": "kount `kount( { 'name': 'simple' } )` should be equal to 1",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 0",
-      "fullTitle": "kount `kount( { } )` should be equal to 0",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 0",
-      "fullTitle": "kount `kount( )` should be equal to 0",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 4,
+		"tests": 3,
+		"passes": 3,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-21T11:00:19.394Z",
+		"end": "2017-08-21T11:00:19.399Z",
+		"duration": 5
+	},
+	"tests": [
+		{
+			"title": "should be equal to 1",
+			"fullTitle": "kount `kount( { 'name': 'simple' } )` should be equal to 1",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 0",
+			"fullTitle": "kount `kount( { } )` should be equal to 0",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 0",
+			"fullTitle": "kount `kount( )` should be equal to 0",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to 1",
+			"fullTitle": "kount `kount( { 'name': 'simple' } )` should be equal to 1",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 0",
+			"fullTitle": "kount `kount( { } )` should be equal to 0",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 0",
+			"fullTitle": "kount `kount( )` should be equal to 0",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
